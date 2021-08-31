@@ -1,0 +1,266 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+.text-center{
+    text-align: center;
+}
+.text-right{
+    text-align: right;
+}
+.float-left{
+    float: left;
+}
+.float-right{
+    float: right;
+}
+.clearfix::after{
+    content: '';
+    clear: both;
+    display: block;
+}
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+}
+ul,ol{
+    list-style: none;
+}
+body{
+    font-family: 'Work Sans', sans-serif;
+}
+/* header css start */
+.header {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+}
+.header-left{
+    width: 30%;
+}
+.logo img{
+    width: 45px;
+    float: left;
+    margin-right: 10px;
+    margin-top: 8px;
+}
+.logo h1 {
+    line-height: 58px;
+    font-weight: 500;
+    font-size: 25px;
+    margin-top: 4px;
+    transition: .4s;
+}
+.logo h1:hover{
+    color: rgb(182, 178, 178);
+    transition: .4s;
+}
+.header-center{
+    width: 55%;
+}
+.menu{}
+.menu ul{
+    
+}
+.menu ul li{
+    display: inline-block;
+    position: relative;
+}
+.menu ul li a {
+    display: inline-block;
+    padding: 25px 14px;
+    color: #010101;
+}
+.menu ul li a:hover{
+    color: #6278df;
+}
+.header-right{
+    width: 15%;
+}
+.btn a {
+    color: #6278df;
+    display: inline-block;
+    border: 2px solid #6278df;
+    padding: 10px 26px;
+    border-radius: 5px;
+    font-weight: 700;
+    margin-top: 13px;
+    transition: .5s;
+}
+.btn a:hover{
+    color: #fff;
+    background-color: #6278df;
+    border: 2px solid #6278df;
+    transition: .5s;
+}
+/* dropdown start */
+.menu ul li ul {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 185px;
+    background-color: rgb(255, 255, 255);
+    opacity: 0;
+    visibility: hidden;
+    transition: .5s;
+    z-index: 3;
+}
+.menu ul li ul li{
+    display: block;
+    margin-top: 0;
+}
+.menu ul li ul li a {
+    display: block;
+    padding: 16px 16px;
+    color: rgb(102, 96, 96);
+    border-bottom: 1px solid #ddd;
+}
+.menu ul li ul li a:hover{
+    
+}
+.menu ul li:hover ul{
+    opacity: 1;
+    visibility: visible;
+}
+/* second dropdown */
+.menu ul li ul li{
+    position: relative;
+}
+.menu ul li #sdrop ul{
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: rgb(255, 255, 255);
+    width: 240px;
+}
+/* banner css start */
+.banner{
+    background: url(../img/mbr-4.jpg) no-repeat center center;
+    background-size: cover;
+    padding: 135px 0;
+    position: relative;
+    z-index: 1;
+    margin-top: 71px;
+}
+.banner::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgba(34, 30, 30, .4);
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+.banner-inner{
+    color: #fff;
+    text-align: center;
+}
+.banner-inner h3 {
+    font-size: 28px;
+    font-weight: 400;
+}
+.banner-inner h1 {
+    font-size: 60px;
+    margin: 40px 0 40px 0;
+}
+.banner-inner a {
+    margin-right: 20px;
+    color: #7d7d7d;
+    display: inline-block;
+    background-color: #fcfcfc;
+    padding: 20px 33px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 600;
+    transition: .4s;
+}
+.banner-inner a:hover {
+    color: #ddd;
+    background-color: #6278df;
+    transition: .5s;
+}
+/* about css start */
+.about{
+    background-color: #f7f9ff;
+    padding: 80px 0;
+}
+.about-left{
+    width: 48%;
+}
+.about-right{
+    width: 48%;
+}
+.about-content h1 {
+    font-weight: 400;
+    font-size: 45px;
+    margin-bottom: 16px;
+}
+.about-content p {
+    color: #767676;
+    font-size: 21px;
+    line-height: 29px;
+    font-weight: 300;
+}
+/* service css start */
+.service{
+    background-color: #ffffff;
+    padding: 80px 0;
+}
+.service-heading h1{
+    font-size: 60px;
+    margin-bottom: 30px;
+}
+.service-heading h3 {
+    color: #887676;
+    font-weight: 300;
+    font-size: 25px;
+}
+.service-item{
+    margin-top: 65px;
+}
+.ser-box{
+    width: 31%;
+    padding: 49px 29px;
+    margin-top: 33px;
+    box-shadow: 0 0 30px rgb(231, 227, 227);
+    box-sizing: border-box;
+    transition: .4s;
+}
+.ser-box:hover{
+    box-shadow: 0px 0px 15px rgb(179, 173, 173);
+    transition: .4s;
+}
+.s-icon span{
+    color: #6278df;
+    font-size: 50px;
+    float: left;
+    margin-right: 25px;
+    height: 150px;
+}
+.s-content{
+    margin-top: 8px;
+}
+.s-content h3{
+    font-size: 25px;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+.s-content p{
+    font-size: 20px;
+    color: #768788;
+    line-height: 30px;
+}
+.mar-right{
+    margin-right: 3%;
+}
